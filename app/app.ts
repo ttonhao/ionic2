@@ -4,6 +4,7 @@ import {StatusBar} from 'ionic-native';
 
 import {HomePage} from './pages/home/home';
 import {MenuTestePage} from './pages/menu-teste/menu-teste';
+import { GeneratedPage } from './pages/generated/generated';
 
 @Component({
   templateUrl: 'build/app.html'
@@ -15,7 +16,9 @@ export class MyApp {
     platform.ready().then(() => {
       this.pages = [
         { component: HomePage, title: 'Home', icon: 'home' },
-        { component: MenuTestePage, title: 'Menu Teste', icon: 'menu' }
+        { component: MenuTestePage, title: 'Menu Teste', icon: 'menu' },
+        { component: GeneratedPage, title: 'Pagina Gerada', icon: 'home' }
+        
       ];
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
